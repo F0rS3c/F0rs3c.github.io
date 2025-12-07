@@ -113,7 +113,7 @@ const headerHTML = `<!-- Navbar -->
             <div class="mobile-header-wrapper-inner">
                 <div class="mobile-header-logo">
                     <a class="d-flex main-logo align-items-center d-inline-flex" href="index.html">
-                        <img src="assets/imgs/footer/logo.svg" alt="zelio" />
+                        <img src="assets/imgs/footer/3.png" alt="zelio" />
                         <span class="fs-4 ms-2 text-dark">Elkheir.Ilyas</span>
                     </a>
                     <div class="burger-icon burger-icon-white border rounded-3">
