@@ -1044,7 +1044,7 @@
                             <div class="position-relative z-2">
                                 <h3 class="text-primary-2 mb-3">Let's connect</h3>
                                 <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                                    <input type="hidden" name="access_key" value="f62c67aa-cbe7-4bbd-a81c-d47ef95f67b4">
+                                    <input type="hidden" name="access_key" id="web3forms-api-key" value="">
                                     <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
                                     <input type="hidden" name="from_name" value="Portfolio Contact Form">
                                     <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
@@ -1159,9 +1159,24 @@
     <script src="assets/js/vendors/aat.min.js"></script>
     <!-- Include Components (load after jQuery) -->
     <script src="assets/js/include-components.js"></script>
+    <!-- Load Config (must be loaded before contact form handler) -->
+    <script src="config.js"></script>
     <!-- Contact Form Handler -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Set API key from config
+            const apiKeyInput = document.getElementById('web3forms-api-key');
+            if (window.CONFIG && window.CONFIG.WEB3FORMS_API_KEY) {
+                apiKeyInput.value = window.CONFIG.WEB3FORMS_API_KEY;
+            } else {
+                console.error('Web3Forms API key not found in config.js');
+                const statusDiv = document.getElementById('form-status');
+                if (statusDiv) {
+                    statusDiv.innerHTML = '<div class="alert alert-warning">Configuration error: API key not found. Please check config.js file.</div>';
+                    statusDiv.style.display = 'block';
+                }
+            }
+            
             const contactForm = document.getElementById('contact-form');
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
