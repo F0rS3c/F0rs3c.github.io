@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<title>William - Portfolio listing</title>
+<script src="assets/js/vendors/color-modes.js"></script>
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/footer/3.png" />
+<!-- Libs CSS -->
+<link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+<link rel="stylesheet" href="assets/css/vendors/aos.css" />
+<link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+<link rel="stylesheet" href="assets/css/vendors/carouselTicker.css" />
+<link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" />
+<link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+<link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+<!-- Main CSS -->
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+    /* Ensure all cards have consistent sizing with image on left */
+    .card-custom {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card__inner {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    
+    .card__image-container {
+        width: 45%;
+        min-width: 45%;
+        height: 100%;
+        min-height: 400px;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #1a1a1a;
+        flex-shrink: 0;
+    }
+    
+    .card__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .card__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .card__content p.text-300 {
+        flex: 1;
+    }
+    
+    @media (max-width: 992px) {
+        .card__inner {
+            flex-direction: column;
+        }
+        
+        .card__image-container {
+            width: 100%;
+            min-width: 100%;
+            min-height: 280px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .card__image-container {
+            min-height: 220px;
+        }
+    }
+</style>
+
+    </head>
+    <body>
+        <!-- prettier-ignore -->
+        <!-- Header will be loaded here -->
+        <div id="header-placeholder"></div>
+
+        <main>
+            <!-- prettier-ignore -->
+            <!--work -->
+<section class="section-work pt-120 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-lg-auto">
+                <div class="text-center">
+                    <div class="btn btn-gradient d-inline-block text-uppercase">recent Work</div>
+                    <h3 class="ds-3 mt-3 mb-4 text-dark">Browse <span class="text-300">My recent work and discover the</span> code and architecture powering <span class="text-300">Each Project</span></h3>
+                    <p class="text-300 fs-5">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card-scroll mt-8">
+                <div class="cards">
+                    <!-- prettier-ignore -->
+                    <div class="card-custom" data-index="0">
+    <div class="card__inner bg-6 p-lg-6 p-md-4 p-3">
+        <div class="card__image-container zoom-img position-relative">
+            <img class="card__image" src="assets/imgs/projects/projects-1/mo7s.png" alt="MO7AM.AI" />
+            <a href="project.html?id=mo7amai" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+        </div>
+        <div class="card__content px-md-4 px-3">
+            <div class="card__title d-md-flex align-items-center mb-0 mb-lg-2">
+                <a href="project.html?id=mo7amai" class="card_title_link">
+                    <p class="text-primary mb-0 mb-md-2">AI / LEGAL TECH</p>
+                    <h3 class="fw-semibold">MO7AM.AI</h3>
+                </a>
+                <a href="project.html?id=mo7amai" class="card-icon d-none d-md-inline-flex border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+            <p class="text-300 mb-lg-auto mb-md-4 mb-3">MO7AM.AI is an advanced AI-powered legal assistant built to make Moroccan law accessible to everyone. The name comes from the Arabic word "محامي" (lawyer), and the project's mission is to bring legal knowledge closer to Moroccan citizens using modern AI technology.</p>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Technologies</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">Flask, LangChain, OpenAI, React, Tailwind</p>
+            </div>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Category</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">AI Legal Assistant</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-custom" data-index="1">
+    <div class="card__inner bg-6 p-lg-6 p-md-4 p-3">
+        <div class="card__image-container zoom-img position-relative">
+            <img class="card__image" src="assets/imgs/projects/projects-1/cy.png" alt="Cys3c" />
+            <a href="project.html?id=cys3c" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+        </div>
+        <div class="card__content px-md-4 px-3">
+            <div class="card__title d-md-flex align-items-center mb-0 mb-lg-2">
+                <a href="project.html?id=cys3c" class="card_title_link">
+                    <p class="text-primary mb-0 mb-md-2">CYBERSECURITY</p>
+                    <h3 class="fw-semibold">Cys3c – Cloud Security & Pentesting Platform</h3>
+                </a>
+                <a href="project.html?id=cys3c" class="card-icon d-none d-md-inline-flex border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+            <p class="text-300 mb-lg-auto mb-md-4 mb-3">Cys3c is a cloud-based cybersecurity platform designed to centralize pentesting tools, bug bounty programs, and token-based reward management into a single, scalable ecosystem.</p>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Technologies</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">Node.js, React, TailwindCSS, Web3.js, Express.js, Docker, Solidity, Python, Go</p>
+            </div>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Category</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">Security Platform</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-custom" data-index="2">
+    <div class="card__inner bg-6 p-lg-6 p-md-4 p-3">
+        <div class="card__image-container zoom-img position-relative">
+            <img class="card__image" src="assets/imgs/projects/projects-1/pos.jpg" alt="Pharmacy POS System" />
+            <a href="project.html?id=pos" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+        </div>
+        <div class="card__content px-md-4 px-3">
+            <div class="card__title d-md-flex align-items-center mb-0 mb-lg-2">
+                <a href="project.html?id=pos" class="card_title_link">
+                    <p class="text-primary mb-0 mb-md-2">ENTERPRISE SOFTWARE</p>
+                    <h3 class="fw-semibold">Pharmacy POS System</h3>
+                </a>
+                <a href="project.html?id=pos" class="card-icon d-none d-md-inline-flex border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+            <p class="text-300 mb-lg-auto mb-md-4 mb-3">A fully customized Laravel-based Inventory & Point of Sale System designed specifically for pharmacies. The system streamlines stock management, sells prescription and OTC products, handles invoicing, supplier orders, and real-time analytics.</p>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Technologies</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">Laravel, MySQL, Vue.js, TailwindCSS, jQuery, Python, OpenCV, TensorFlow/PyTorch</p>
+            </div>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Category</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">POS System</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-custom" data-index="3">
+    <div class="card__inner bg-6 p-lg-6 p-md-4 p-3">
+        <div class="card__image-container zoom-img position-relative">
+            <img class="card__image" src="assets/imgs/projects/projects-1/ai.png" alt="AI-Powered Interior Design" />
+            <a href="project.html?id=decoai" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+        </div>
+        <div class="card__content px-md-4 px-3">
+            <div class="card__title d-md-flex align-items-center mb-0 mb-lg-2">
+                <a href="project.html?id=decoai" class="card_title_link">
+                    <p class="text-primary mb-0 mb-md-2">AI / WEB APPLICATION</p>
+                    <h3 class="fw-semibold">AI-Powered Interior Design Web Application</h3>
+                </a>
+                <a href="project.html?id=decoai" class="card-icon d-none d-md-inline-flex border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+            <p class="text-300 mb-lg-auto mb-md-4 mb-3">This project consists of building a next-generation AI-driven interior design tool that allows users to upload a photo of any room and instantly generate a redesigned version using modern machine-learning models.</p>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Technologies</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">React.js, Next.js, Chakra UI, Node.js, Express.js, MySQL, Stable Diffusion, Replicate API</p>
+            </div>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Category</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">AI Web App</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-custom" data-index="4">
+    <div class="card__inner bg-6 p-lg-6 p-md-4 p-3">
+        <div class="card__image-container zoom-img position-relative">
+            <img class="card__image" src="assets/imgs/projects/projects-1/real.png" alt="Real Estate Marketplace" />
+            <a href="project.html?id=real" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+        </div>
+        <div class="card__content px-md-4 px-3">
+            <div class="card__title d-md-flex align-items-center mb-0 mb-lg-2">
+                <a href="project.html?id=real" class="card_title_link">
+                    <p class="text-primary mb-0 mb-md-2">WEB DEVELOPMENT</p>
+                    <h3 class="fw-semibold">Real Estate Marketplace</h3>
+                </a>
+                <a href="project.html?id=real" class="card-icon d-none d-md-inline-flex border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+            <p class="text-300 mb-lg-auto mb-md-4 mb-3">This project consists of designing and developing a modern real estate platform that allows users to search, filter, and explore properties available for buying or renting, both locally and internationally.</p>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Technologies</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">Next.js, Chakra UI, Express.js, MySQL</p>
+            </div>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Category</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">Marketplace Platform</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-custom" data-index="5">
+    <div class="card__inner bg-6 p-lg-6 p-md-4 p-3">
+        <div class="card__image-container zoom-img position-relative">
+            <img class="card__image" src="assets/imgs/projects/projects-1/tabletech.png" alt="TableTech" />
+            <a href="project.html?id=table" class="card-image-overlay position-absolute start-0 end-0 w-100 h-100"></a>
+        </div>
+        <div class="card__content px-md-4 px-3">
+            <div class="card__title d-md-flex align-items-center mb-0 mb-lg-2">
+                <a href="project.html?id=table" class="card_title_link">
+                    <p class="text-primary mb-0 mb-md-2">WEB APPLICATION</p>
+                    <h3 class="fw-semibold">TableTech</h3>
+                </a>
+                <a href="project.html?id=table" class="card-icon d-none d-md-inline-flex border text-dark border-dark icon-shape ms-auto icon-md rounded-circle">
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+            <p class="text-300 mb-lg-auto mb-md-4 mb-3">TableTech (Arabic / Darija: طبلتك) is a contactless digital menu and ordering platform designed for cafés and restaurants. Guests scan a QR code on their table, browse the live menu on their phone, place orders, and pay — all without waiting for staff contact.</p>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Technologies</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">HTML5, Bootstrap, JavaScript/jQuery, MySQL, PHP</p>
+            </div>
+            <div class="d-md-flex content">
+                <p class="mb-0 fs-7 text-dark text-uppercase w-40">Category</p>
+                <p class="mb-0 card__description text-300 fs-6 mb-0">Restaurant Tech</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        </main>
+        <!-- prettier-ignore -->
+        <!-- Footer will be loaded here -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Libs JS -->
+        <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<!-- Include Components (load after jQuery) -->
+<script src="assets/js/include-components.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/main.js"></script>
+
+    </body>
+</html>

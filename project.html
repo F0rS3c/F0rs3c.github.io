@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Project - Elkheir.Ilyas</title>
+    <script src="assets/js/vendors/color-modes.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/footer/3.png" />
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/aos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+    <link rel="stylesheet" href="assets/css/vendors/carouselTicker.css" />
+    <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+    <link rel="stylesheet" href="assets/fonts/satoshi/satoshi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Playfair+Display:wght@400..900&family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="section-work-single section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-lg-auto mb-lg-0">
+                        <div class="text-center">
+                            <div class="btn btn-gradient d-inline-block text-uppercase">Project</div>
+                            <h3 class="ds-3 mt-3 mb-4 text-dark" id="project-title">Loading...</h3>
+                            <p class="text-300 fs-5 mb-0" id="project-description">Loading project details...</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center gap-4 py-8"></div>
+                    <img id="project-image" src="" data-bb-lazy="true" loading="lazy" alt="" style="display: none;">
+                    <div class="col-lg-8 mx-lg-auto mt-8">
+                        <div class="ck-content" id="project-content">
+                            <p>Loading content...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Libs JS -->
+    <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+    <script src="assets/js/vendors/wow.min.js"></script>
+    <script src="assets/js/vendors/smart-stick-nav.js"></script>
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendors/gsap.min.js"></script>
+    <script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+    <script src="assets/js/vendors/jquery.odometer.min.js"></script>
+    <script src="assets/js/vendors/jquery.appear.js"></script>
+    <script src="assets/js/vendors/gsap-custom.js"></script>
+    <script src="assets/js/imageRevealHover.js"></script>
+    <script src="assets/js/vendors/aat.min.js"></script>
+    <!-- Projects Data -->
+    <script src="assets/js/projects-data.js"></script>
+    <!-- Project Loader -->
+    <script>
+        (function() {
+            // Get project ID from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('id') || urlParams.get('project') || window.location.hash.substring(1);
+            
+            if (!projectId) {
+                document.getElementById('project-title').textContent = 'Project Not Found';
+                document.getElementById('project-description').textContent = 'Please specify a project ID in the URL (e.g., ?id=cys3c)';
+                document.getElementById('project-content').innerHTML = '<p>Available projects: cys3c, decoai, mo7amai, table, pos, real</p>';
+                return;
+            }
+
+            // Get project data
+            const project = projectsData[projectId];
+            
+            if (!project) {
+                document.getElementById('project-title').textContent = 'Project Not Found';
+                document.getElementById('project-description').textContent = `Project "${projectId}" not found. Available projects: ${Object.keys(projectsData).join(', ')}`;
+                document.getElementById('project-content').innerHTML = '<p>Please check the project ID and try again.</p>';
+                return;
+            }
+
+            // Update page title
+            document.title = project.title + ' - Elkheir.Ilyas';
+
+            // Update content
+            document.getElementById('project-title').textContent = project.title;
+            document.getElementById('project-description').textContent = project.description;
+            document.getElementById('project-image').src = project.image;
+            document.getElementById('project-image').alt = project.title;
+            document.getElementById('project-image').style.display = 'block';
+            document.getElementById('project-content').innerHTML = project.content;
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        })();
+    </script>
+    <!-- Include Components (load after jQuery) -->
+    <script src="assets/js/include-components.js"></script>
+    <!-- Theme JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
