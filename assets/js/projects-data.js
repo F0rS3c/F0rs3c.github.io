@@ -3,7 +3,7 @@ const projectsData = {
     'cys3c': {
         title: 'Cys3c – Cloud Security & Pentesting Platform',
         description: 'Cys3c is a cloud-based cybersecurity platform designed to centralize pentesting tools, bug bounty programs, and token-based reward management into a single, scalable ecosystem.',
-        image: 'http://127.0.0.1:8000/storage/hj-1.png',
+        image: 'assets/imgs/projects/projects-1/cy.png',
         content: `<h1><strong>Cys3c – Cloud Security &amp; Pentesting Platform</strong></h1>
             <p>&nbsp;</p>
             <h2><strong>Project Description</strong></h2>
@@ -110,7 +110,7 @@ const projectsData = {
     'decoai': {
         title: 'AI-Powered Interior Design Web Application',
         description: 'This project consists of building a next-generation AI-driven interior design tool that allows users to upload a photo of any room and instantly generate a redesigned version using modern machine-learning models.',
-        image: 'http://127.0.0.1:8000/storage/sddsd.png',
+        image: 'assets/imgs/projects/projects-1/ai.png',
         content: `<h1><strong>AI-Powered Interior Design Web Application</strong></h1>
             <p>&nbsp;</p>
             <h2><strong>Project Overview</strong></h2>
@@ -214,7 +214,7 @@ const projectsData = {
     'mo7amai': {
         title: 'MO7AM.AI',
         description: 'MO7AM.AI is an advanced AI-powered legal assistant built to make Moroccan law accessible to everyone. The name comes from the Arabic word "محامي" (lawyer), and the project\'s mission is to bring legal knowledge closer to Moroccan citizens using modern AI technology.',
-        image: 'http://127.0.0.1:8000/storage/mo7s.png',
+        image: 'assets/imgs/projects/projects-1/mo7s.png',
         content: `<h1><strong>MO7AM.AI – AI Moroccan Law Assistant</strong></h1>
             <h2><strong>Description</strong></h2>
             <p><strong>MO7AM.AI</strong> is an advanced AI-powered legal assistant built to make Moroccan law accessible to everyone.
@@ -298,7 +298,7 @@ const projectsData = {
     'table': {
         title: 'TableTech',
         description: 'TableTech (Arabic / Darija: طبلتك) is a contactless digital menu and ordering platform designed for cafés and restaurants. Guests scan a QR code on their table, browse the live menu on their phone, place orders, and pay — all without waiting for staff contact. Built as a fast, lightweight web app using Bootstrap, HTML5, jQuery, and PHP, TableTech is a low-cost, easily deployable COVID-safe solution.',
-        image: 'http://127.0.0.1:8000/storage/tabletech.png',
+        image: 'assets/imgs/projects/projects-1/tabletech.png',
         content: `<h1><strong>TableTech – طبلتك&nbsp;</strong></h1>
             <p><strong>Contactless Table Ordering System — Frontend &amp; Backend Developer</strong><br><strong>Tech:</strong> Bootstrap, HTML5, JavaScript (jQuery), PHP<br>&nbsp;</p>
             <h2><strong>Project Summary</strong></h2>
@@ -358,7 +358,7 @@ const projectsData = {
     'pos': {
         title: 'Pharmacy POS System',
         description: 'A fully customized Laravel-based Inventory & Point of Sale System designed specifically for pharmacies. The system streamlines stock management, sells prescription and OTC products, handles invoicing, supplier orders, and real-time analytics.',
-        image: 'http://127.0.0.1:8000/storage/whatsapp-image-2025-12-02-at-034614-f9ca71f4.jpg',
+        image: 'assets/imgs/projects/projects-1/pos.jpg',
         content: `<h1><strong>Pharmacy Inventory &amp; POS System – Laravel-Based</strong></h1>
             <h2><strong>Overview</strong></h2>
             <p>A fully customized <strong>Laravel-based Inventory &amp; Point of Sale System</strong> designed specifically for pharmacies.
@@ -470,7 +470,7 @@ const projectsData = {
     'real': {
         title: 'Real Estate Marketplace',
         description: 'This project consists of designing and developing a modern real estate platform that allows users to search, filter, and explore properties available for buying or renting, both locally and internationally.',
-        image: 'http://127.0.0.1:8000/storage/image-2.png',
+        image: 'assets/imgs/projects/projects-1/real.png',
         content: `<h1><strong>Real Estate Marketplace</strong></h1>
             <p>&nbsp;</p>
             <h2><strong>Project Overview</strong></h2>
